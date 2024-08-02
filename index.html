@@ -1,231 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/0305cb9558.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<div id="header">
-    <div class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pratik Marabille-Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/0305cb9558.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
         <nav>
-            <img src="images/logo_por.jpeg" alt="" class="logo" href="#header">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolios</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          <a href="#header">
+            <img
+              src="images/UX_Design_Portfolio_Blog-Photoroom.png"
+              alt="Logo"
+              id="logo"
+            />
+          </a>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
+
         <div class="header-text">
-            <p>Web Developer</p>
-            <h1>Hi, I'm <span> Pratik </span><br> M From India</h1>
+          <h3>Hi, I am Pratik Marabille</h3>
+
+          <h3>Welcome to my Portfolio</h3>
         </div>
+      </div>
     </div>
-</div>
 
-
-
-<div id="about">
-    <div class="container">
+    <div id="about">
+      <div class="container">
         <div class="row">
-            <div class="about-col-1">
-                <img src="images/about_me.jpg" class="about_me" alt="">
+          <div class="about-col-1">
+            <img src="images/about_me.jpg" class="about_me" alt="" />
+          </div>
+
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I'm a developer with a passion for coding and problem-solving. I
+              specialize in building high-quality software solutions and
+              applications using modern technologies like React, Streamlit, and
+              Next.js. I am intreseted in bulding machine learning application.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('projects')">Projects</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
-            
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nesciunt distinctio? Nulla vero expedita quidem dicta molestias, minus voluptatum enim hic earum nam modi incidunt, nesciunt quas atque impedit laboriosam.
-                Pariatur ratione eum omnis vitae architecto, nemo eius obcaecati natus consequuntur accusamus aliquid quo illum itaque dignissimos eligendi! Architecto, nobis. Recusandae fugiat nemo nostrum autem expedita ex qui corporis quia!</p>
-
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('projects')">Projects</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="Skills">
-                    <ul>
-                        <li><span>Web Developer</span><br>Designing web/App Interfaces</li>
-                        <li><span>Game Developer</span><br>Designing Game Interfaces</li>
-                        <li><span>App Developer</span><br>Building Android/ios Apps</li>
-                    </ul>
-                </div>
-
-                <div class="tab-contents" id="projects">
-                    <ul>
-                        <li><span>Web Developer</span><br>Designing a personal portfolio website</li>
-                        <li><span>Game Developer</span><br>Developed a game like suduko and many other</li>
-                        <li><span>App Developer</span><br>Developed a hospital managment system app to day to day work</li>
-                    </ul>
-                </div>
-
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2025</span><br>R V College of Engineering</li>
-                        <li><span>2019</span><br>Alvas PU College</li>
-                        <li><span>SSLC</span><br>Gomatesh English Medium High School</li>
-                    </ul>
-                </div>
+            <div class="tab-contents active-tab" id="Skills">
+              <ul>
+                <li>
+                  <span>Web Developer</span><br />Designing web/App Interfaces
+                </li>
+                <li>
+                  <span>Embedded System Design</span><br />Know the knowledge of
+                  the embedded system
+                </li>
+                <li>
+                  <span>Machune Leearning</span><br />Building the machine
+                  learning applications system
+                </li>
+              </ul>
             </div>
 
+            <div class="tab-contents" id="projects">
+              <ul>
+                <li>
+                  <span>Object-detection & Annotation-toolkit</span
+                  ><br />Designed a web based application for underwater object
+                  detection
+                </li>
+                <li>
+                  <span>LivingLodge</span><br />Developed a web application
+                  where we can book or rent the house.
+                </li>
+                <li>
+                  <span>Personal portfolio</span><br />Developed a web
+                  application on Personal profile
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2025</span><br />R V College of Engineering</li>
+                <li><span>2019</span><br />Alvas PU College</li>
+                <li>
+                  <span>SSLC</span><br />Gomatesh English Medium High School
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">My services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit adipisci exercitationem nostrum amet, nisi distinctio excepturi hic autem numquam, aspernatur nesciunt quia voluptatem aliquam consequuntur animi eligendi nam. Et, consequatur.</p>
-                <a href="#">learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-crop"></i>
-                <h2>Game design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit adipisci exercitationem nostrum amet, nisi distinctio excepturi hic autem numquam, aspernatur nesciunt quia voluptatem aliquam consequuntur animi eligendi nam. Et, consequatur.</p>
-                <a href="#">learn more</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-app-store"></i>
-                <h2>App Design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit adipisci exercitationem nostrum amet, nisi distinctio excepturi hic autem numquam, aspernatur nesciunt quia voluptatem aliquam consequuntur animi eligendi nam. Et, consequatur.</p>
-                <a href="#">Learn more</a>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-
-
-<div id="portfolio">
-    <div class="container">
+    <div id="portfolio">
+      <div class="container">
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
-            <div class="work">
-                <img src="images/work-1.png" alt="">
-                <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Condfdbgnm efrgthgfgjm gh</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
+          <div class="work">
+            <img src="images/work-1.png" alt="" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                This project aims to replicate the core functionality and design
+                of the popular Airbnb website. It provides users with a platform
+                to search and book accommodations in various countries. This
+                project is built with Next.js, NextAuth, Prisma, Zustand,
+                Tailwind and MongoDB.
+              </p>
+              <a
+                href="https://github.com/PratikRMarabille/Object-Detection-Annotation-Tool"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
             </div>
-            <div class="work">
-                <img src="images/work-2.png" alt="">
-                <div class="layer">
-                    <h3>Music Media App</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Condfdbgnm efrgthgfgjm gh</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
+          </div>
+          <div class="work">
+            <img src="images/detected_img.png" alt="" />
+            <div class="layer">
+              <h3>Object-detection & Annotation-toolkit</h3>
+              <p>
+                Object Detection and Annotation Tool is designed to identify
+                objects within an image. It not only detects existing objects
+                but also provides a user-friendly interface to annotate any
+                undetected objects. The tool allows users to save annotated
+                images in both YOLO and PASCAL VOC formats.
+              </p>
+              <a
+                href="https://github.com/PratikRMarabille/Object-Detection-Annotation-Tool"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
             </div>
-            <div class="work">
-                <img src="images/work-3.png" alt="">
-                <div class="layer">
-                    <h3>Online shoping App</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Condfdbgnm efrgthgfgjm gh</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="" />
+            <div class="layer">
+              <h3>Personal portfolio</h3>
+              <p>
+                This is a portfolio website created using HTML,CSS,javascripts
+              </p>
+              <a
+                href="https://github.com/PratikRMarabille/Object-Detection-Annotation-Tool"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
             </div>
+          </div>
         </div>
-        <a href="#" class="btn">See more</a>
+        <a href="https://github.com/PratikRMarabille" class="btn">See more</a>
+      </div>
     </div>
-</div>
 
-
-
-
-<div id="contact">
-    <div class="container">
+    <div id="contact">
+      <div class="container">
         <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope"></i>contact@example.com</p>
-                <p> <i class="fa-solid fa-phone"></i> 0123456789</p>
-                <div class="social-icons">
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                    <a href=""><i class="fa-brands fa-github"></i></a>
-                </div>
-                <a href="images/my-cv.pdf" download class="btn btn2">Downlad CV</a>
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i
+                class="fa-solid fa-envelope"
+                href="pratikmarabille@gmail.com"
+              ></i>
+              pratikmarabille@gmail.com
+            </p>
+            <br />
+            <p><i class="fa-solid fa-phone"></i> 6362838598</p>
+            <div class="social-icons">
+              <br />
+              <a
+                href="https://www.linkedin.com/in/pratik-marabille-95149b232/"
+                class="linkedin"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://x.com/Marabille_PRM"
+                class="twitter"
+                target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a
+                href="https://github.com/PratikRMarabille"
+                class="github"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
             </div>
 
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your email" required>
-                    <textarea name="Message" id="" cols="" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
+            <a href="images/Pratik_Resume.pdf" download class="btn btn2"
+              >Downlad CV</a
+            >
+          </div>
+
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="Message"
+                id=""
+                cols=""
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright @ Pratik. Made with <i class="fa-solid fa-heart"></i></p>
+      </div>
     </div>
-    <div class="copyright">
-        <p>Copyright @ Pratik. Made with<i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
-    </div>
-</div>
 
-
-
-
-
-<script>
-
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
 
-    }
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyGVWanLh-dZuCz3ezlbDhkp3z9eVt6BOlstwAxYW5i5becW7oNi6-01NVYfgjFAwo/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
 
-</script>
-<script>
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right="0";
-    }
-    function closemenu(){
-        sidemenu.style.right="-200px";
-    }
-
-
-
-</script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyGVWanLh-dZuCz3ezlbDhkp3z9eVt6BOlstwAxYW5i5becW7oNi6-01NVYfgjFAwo/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg=document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML="Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML=""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-</body>
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
 </html>
